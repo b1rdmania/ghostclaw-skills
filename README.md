@@ -94,9 +94,11 @@ Skills built by the GhostClaw community. These live in their own repos — insta
 | `/retro-web` | Transform any website into nostalgic 90s/2000s styles | [ziggythebot/retro-web-generator](https://github.com/ziggythebot/retro-web-generator) |
 | `namecheap-mcp` | Domain availability MCP server (600+ TLDs, batch checking) | [ziggythebot/namecheap-mcp](https://github.com/ziggythebot/namecheap-mcp) |
 
-### Shoutouts
+### Credits & Shoutouts
 
-Skills we use daily that were built by others in the Claude Code ecosystem:
+The marketing and design skills in this repo are adapted from the open Claude Code skills ecosystem. We've customised and tested them for GhostClaw but they build on work shared by the community. If you recognise your skill here and want attribution or it removed, open an issue.
+
+Tools and resources we use daily:
 
 - [**awesome-claude-code**](https://github.com/b1rdmania/awesome-claude-code) — Curated list of Claude Code skills, hooks, and tools
 - [**awesome-llm-skills**](https://github.com/b1rdmania/awesome-llm-skills) — Skills that work across Claude Code, Codex, Gemini CLI and custom agents
