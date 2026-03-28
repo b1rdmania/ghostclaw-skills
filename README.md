@@ -1,19 +1,38 @@
-# GhostClaw Skills
+<p align="center">
+  <img src="https://ghostclaw.io/ghostclaw-mark-512.png" alt="GhostClaw" width="80">
+</p>
 
-Curated skills for [GhostClaw](https://github.com/b1rdmania/ghostclaw) and Claude Code. Each skill is a markdown file — drop it into `.claude/skills/` and it works.
+<h1 align="center">GhostClaw Skills</h1>
 
-## Install a skill
+<p align="center">
+  <strong>46 skills for <a href="https://github.com/b1rdmania/ghostclaw">GhostClaw</a> & Claude Code</strong><br>
+  Marketing. Design. Automation. And weird stuff.<br>
+  Each skill is a markdown file — drop it in and go.
+</p>
 
+<p align="center">
+  <a href="https://ghostclaw.io/skills.html">Browse skills</a> ·
+  <a href="https://github.com/b1rdmania/ghostclaw">GhostClaw</a> ·
+  <a href="https://t.me/+8qJbqxzBQAZkYTNk">Community</a>
+</p>
+
+---
+
+## How it works
+
+A skill is a `.md` file in `.claude/skills/`. Claude reads it and follows the instructions when you invoke the command. No code, no config, no build step.
+
+**Install a skill:**
 ```bash
-# Copy a skill folder into your GhostClaw install
 cp -r marketing/page-cro /path/to/ghostclaw/.claude/skills/
 ```
 
-Or just tell Claude: "Install the page-cro skill from ghostclaw-skills."
+Or just tell Claude: *"Install the page-cro skill from ghostclaw-skills."*
 
-## Categories
+---
 
-### Agent Skills (`agent/`)
+## Agent Skills
+
 Core GhostClaw add-ons — Gmail, voice, monitoring, scheduling, multi-agent teams.
 
 | Skill | What it does |
@@ -31,8 +50,9 @@ Core GhostClaw add-ons — Gmail, voice, monitoring, scheduling, multi-agent tea
 | [`/add-update-check`](agent/add-update-check) | Check for new GhostClaw versions |
 | [`/update-ghostclaw`](agent/update-ghostclaw) | Safe update with backup and rollback |
 
-### Marketing & Growth (`marketing/`)
-Full marketing toolkit. CRO, copywriting, SEO, outreach, strategy.
+## Marketing & Growth
+
+Full marketing toolkit — CRO, copywriting, SEO, outreach, strategy. Adapted from the open Claude Code skills ecosystem, customised and tested for GhostClaw.
 
 | Skill | What it does |
 |-------|-------------|
@@ -65,7 +85,8 @@ Full marketing toolkit. CRO, copywriting, SEO, outreach, strategy.
 | [`/marketing-psychology`](marketing/marketing-psychology) | Behavioral science for marketing |
 | [`/product-marketing-context`](marketing/product-marketing-context) | Set up product/audience context |
 
-### Design & Build (`design/`)
+## Design & Build
+
 Design systems, structured data, analytics, testing.
 
 | Skill | What it does |
@@ -77,9 +98,9 @@ Design systems, structured data, analytics, testing.
 | [`/ab-test-setup`](design/ab-test-setup) | Plan and implement A/B tests |
 | [`/domain-check`](design/domain-check) | Domain availability (600+ TLDs) |
 
-### Community & Custom Skills
+## Community & Custom Skills
 
-Skills built by the GhostClaw community. These live in their own repos — install by cloning into `.claude/skills/`.
+Skills we've built or that others have shared. These live in their own repos.
 
 | Skill | What it does | Repo |
 |-------|-------------|------|
@@ -88,33 +109,39 @@ Skills built by the GhostClaw community. These live in their own repos — insta
 | `/brand-audit` | Audit online presence for AI readiness. Scored reports | [b1rdmania/brand-audit](https://github.com/b1rdmania/brand-audit) |
 | `/brand-skills` | Brand development, image gen, frontend design | [b1rdmania/claude-brand-skills](https://github.com/b1rdmania/claude-brand-skills) |
 | `/brand-naming` | Brand naming based on Placek & Roll methodologies | [ziggythebot/brand-naming-skill](https://github.com/ziggythebot/brand-naming-skill) |
-| `/variant-workflow` | Preserve design fidelity converting Variant exports to production | [ziggythebot/variant-workflow](https://github.com/ziggythebot/variant-workflow) |
+| `/variant-workflow` | Preserve design fidelity converting Variant exports | [ziggythebot/variant-workflow](https://github.com/ziggythebot/variant-workflow) |
 | `/implement-review` | Quality-gated code gen with parallel review loop | [ziggythebot/ghostclaw-implement-review](https://github.com/ziggythebot/ghostclaw-implement-review) |
 | `/hinge-optimizer` | Research-backed dating profile optimizer (45+ sources) | [b1rdmania/hinge-profile-optimizer](https://github.com/b1rdmania/hinge-profile-optimizer) |
 | `/retro-web` | Transform any website into nostalgic 90s/2000s styles | [ziggythebot/retro-web-generator](https://github.com/ziggythebot/retro-web-generator) |
-| `namecheap-mcp` | Domain availability MCP server (600+ TLDs, batch checking) | [ziggythebot/namecheap-mcp](https://github.com/ziggythebot/namecheap-mcp) |
-
-### Credits & Shoutouts
-
-The marketing and design skills in this repo are adapted from the open Claude Code skills ecosystem. We've customised and tested them for GhostClaw but they build on work shared by the community. If you recognise your skill here and want attribution or it removed, open an issue.
-
-Tools and resources we use daily:
-
-- [**awesome-claude-code**](https://github.com/b1rdmania/awesome-claude-code) — Curated list of Claude Code skills, hooks, and tools
-- [**awesome-llm-skills**](https://github.com/b1rdmania/awesome-llm-skills) — Skills that work across Claude Code, Codex, Gemini CLI and custom agents
-- [**context7-mcp**](https://github.com/upstash/context7-mcp) — Up-to-date library docs via MCP
-- [**perplexity-mcp**](https://github.com/perplexity-ai/mcp-server) — Web search grounded in real sources
-
-## Write your own
-
-A skill is just a markdown file with instructions. Put it in `.claude/skills/your-skill/SKILL.md` and Claude will follow it when invoked.
-
-The fastest way: ask Claude to build one for you. "Build me a skill that checks Airtable every morning and messages me new leads."
-
-## Contributing
-
-PRs welcome. Add your skill in the right category folder with a `SKILL.md` file. Community skills with their own repos go in the table above — open a PR to add yours.
+| `namecheap-mcp` | Domain availability MCP server (600+ TLDs) | [ziggythebot/namecheap-mcp](https://github.com/ziggythebot/namecheap-mcp) |
 
 ---
 
-Part of the [GhostClaw](https://ghostclaw.io) ecosystem.
+## Write your own
+
+The fastest way: just ask Claude.
+
+> *"Build me a skill that checks Airtable every morning and messages me new leads."*
+
+Claude writes the markdown, drops it in the right folder, done. Or write one yourself — it's a `.md` file in `.claude/skills/your-skill/SKILL.md`.
+
+## Credits
+
+The marketing and design skills are adapted from the open Claude Code skills ecosystem. We've customised and tested them for GhostClaw but they build on work shared by the community. If you recognise your skill here and want attribution or it removed, [open an issue](https://github.com/b1rdmania/ghostclaw-skills/issues).
+
+**Tools we use daily:**
+
+- [awesome-claude-code](https://github.com/b1rdmania/awesome-claude-code) — Curated list of Claude Code skills, hooks, and tools
+- [awesome-llm-skills](https://github.com/b1rdmania/awesome-llm-skills) — Skills across Claude Code, Codex, Gemini CLI and custom agents
+- [context7-mcp](https://github.com/upstash/context7-mcp) — Up-to-date library docs via MCP
+- [perplexity-mcp](https://github.com/perplexity-ai/mcp-server) — Web search grounded in real sources
+
+## Contributing
+
+PRs welcome. Add your skill in the right category folder with a `SKILL.md` file. Community skills with their own repos go in the table — open a PR to add yours.
+
+---
+
+<p align="center">
+  Part of the <a href="https://ghostclaw.io">GhostClaw</a> ecosystem · Built by <a href="https://github.com/b1rdmania">b1rdmania</a>
+</p>
