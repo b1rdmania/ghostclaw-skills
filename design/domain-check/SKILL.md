@@ -1,3 +1,8 @@
+---
+name: domain-check
+description: Check domain availability across 600+ TLDs instantly using Namecheap MCP server.
+---
+
 # Domain Check
 
 Check domain availability across 600+ TLDs instantly using Namecheap. No API keys needed — uses zero-setup hosted backend.

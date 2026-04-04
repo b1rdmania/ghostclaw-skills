@@ -5,7 +5,7 @@
 <h1 align="center">GhostClaw Skills</h1>
 
 <p align="center">
-  <strong>46 skills for <a href="https://github.com/b1rdmania/ghostclaw">GhostClaw</a> & Claude Code</strong><br>
+  <strong>47 skills for <a href="https://github.com/b1rdmania/ghostclaw">GhostClaw</a> & Claude Code</strong><br>
   Marketing. Design. Automation. And weird stuff.<br>
   Each skill is a markdown file — drop it in and go.
 </p>
@@ -28,6 +28,8 @@ cp -r marketing/page-cro /path/to/ghostclaw/.claude/skills/
 ```
 
 Or just tell Claude: *"Install the page-cro skill from ghostclaw-skills."*
+
+> **Security:** Skills are scanned before installation. Critical findings will block the install. This keeps your agent safe from malicious or broken skills.
 
 ---
 
@@ -97,6 +99,14 @@ Design systems, structured data, analytics, testing.
 | [`/analytics-tracking`](design/analytics-tracking) | GA4, event tracking, UTMs |
 | [`/ab-test-setup`](design/ab-test-setup) | Plan and implement A/B tests |
 | [`/domain-check`](design/domain-check) | Domain availability (600+ TLDs) |
+
+## Documentation
+
+Tools for generating and maintaining project documentation.
+
+| Skill | What it does |
+|-------|-------------|
+| [`/readme-generator`](documentation/readme-generator) | Generate comprehensive README files by analyzing codebase structure |
 
 ## Community & Custom Skills
 
